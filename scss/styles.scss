@@ -63,7 +63,9 @@ header {
         margin: .5rem 0;
     }
 
-    #email {
+    
+
+    input {
         border: 2px solid $pale-blue;
         padding-left: 2rem;
         font-size: .93rem;
@@ -71,6 +73,22 @@ header {
         &::placeholder {
             color: $pale-blue;
         }
+
+        
+    }
+
+
+    // ERROR STYLING 
+
+    .error {
+        border: 2px solid $light-red;
+    }
+    
+    #error-message {
+        color: $light-red;
+        font-size: .83rem;
+        margin-bottom: .75rem;
+        text-align: center;
     }
 
     #submit {
@@ -105,6 +123,11 @@ footer {
         width: 2.5rem;
         margin: 1rem .25rem;
         padding-top: .75rem;
+
+        &:hover {
+            color: #fff;
+            background-color: $blue;
+        }
     }
 
     .copyright {
@@ -115,6 +138,66 @@ footer {
 }
 
 
+@media only screen and (min-width: 1440px) {
+
+    body {
+        height: 100vh;
+    }
+
+    .container {
+        width: 40rem;
+    }
+
+    header {
+        h1 {
+            font-size: 2.25rem;
+        }
+
+        .input-label {
+            font-size: 1.25rem;
+        }
+    }
+        
+    #email-request {
+        flex-direction: row;
+        margin: 0 .5rem;
+        position: relative;
+
+        #email {
+            width: 26rem;
+            font-size: 1rem;
+        }
+
+        #submit {
+            width: 14rem;
+            margin-left: 1rem;
+            font-size: 1rem;
+        }
+
+
+        #error-message {
+            text-align: left;
+            position: absolute;
+            top: 3.8rem;
+            left: 2rem;
+        }
+    }
+
+
+    #banner {
+        width: 40rem;
+        margin: 4.5rem 0;
+    }
+
+    footer {
+        margin: .5rem 2rem;
+
+        .copyright {
+            margin: 0;
+        }
+    }
+
+}
 
 
 
