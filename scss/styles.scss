@@ -85,6 +85,7 @@ header {
     }
     
     #error-message {
+        display: none;
         color: $light-red;
         font-size: .83rem;
         margin-bottom: .75rem;
